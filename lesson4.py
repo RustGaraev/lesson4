@@ -24,5 +24,24 @@ if x_diff != 0:
 else:
     print('Прямая является вертикальной линией, проходящей через X =', x1)
 
+x_start = int(input('Введите начальное знач-е X: '))
+x_end = int(input('Введите конечное знач-е X: '))
+y_start = int(k * x_start + b)
+y_end = int(k * x_end + b)
+
+for y in range(y_end+5, y_start-5, -1):
+    for x in range(x_start-5, x_end+5, 1):
+        if x == ((x_end+5) - (x_start-5)) // 2:
+            print('|', end = '')
+        elif y == ((y_end+5) - (y_start-5)) // 2:
+            print('-', end = '')
+        elif y == k * x + b:
+            print('*', end = '')
+        else:
+            print(' ', end = '')
+    print()
+
+
+
 x_user = float(input('Введите желаемую точку X: '))
 print('Значение Y для', x_user, 'равняется', k * x_user + b)

@@ -23,7 +23,7 @@ if x_diff != 0:
     print("y = ", k, " * x + ", b)
 else:
     print('Прямая является вертикальной линией, проходящей через X =', x1)
-
+# Further draw grafic of this function
 x_start = int(input('Введите начальное знач-е X: '))
 x_end = int(input('Введите конечное знач-е X: '))
 y_start = int(k * x_start + b)

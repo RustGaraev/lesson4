@@ -41,7 +41,8 @@ for y in range(y_end+5, y_start-5, -1):
             print(' ', end = '')
     print()
 
+print('Исключительно для проверки GIT')
 
 
-x_user = float(input('Введите желаемую точку X: '))
-print('Значение Y для', x_user, 'равняется', k * x_user + b)
+#x_user = float(input('Введите желаемую точку X: '))
+#print('Значение Y для', x_user, 'равняется', k * x_user + b)

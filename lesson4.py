@@ -41,9 +41,9 @@ for y in range(y_end+5, y_start-5, -1):
             print(' ', end = '')
     print()
 
-if x_start > 3:
-    print(k * x_start + b)
+if x_start > 3 and y_start > 0:
+    print(k * (x_start - x_end) + b)
 
 
-#x_user = float(input('Введите желаемую точку X: '))
-#print('Значение Y для', x_user, 'равняется', k * x_user + b)
+x_user = float(input('Введите желаемую точку X: '))
+print('Значение Y для', x_user, 'равняется', k * x_user + b)
